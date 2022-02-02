@@ -30,3 +30,18 @@ nav > ul {
   padding-top: 18em;
   padding-bottom: 18em;
 }
+
+.product_list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+aside {
+  text-align: center;
+}
