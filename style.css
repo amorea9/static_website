@@ -2,10 +2,6 @@
   box-sizing: border-box;
 }
 
-body {
-  position: absolute;
-}
-
 main {
   margin-right: 10em;
   margin-left: 10em;
@@ -47,10 +43,13 @@ nav > ul {
   background-size: cover;
   filter: opacity(50%); /* when hovered change opacity to 100% */
 }
+.season:hover {
+  filter: opacity(100%);
+}
 
 .product_list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2em;
   padding-bottom: 1em;
@@ -73,15 +72,20 @@ aside {
 }
 .item,
 .item_sold_out {
-  border: 1px solid black;
   padding: 1em;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(180, 233, 180);
+  border-radius: 12px;
 }
 .item_sold_out {
   filter: opacity(50%);
+}
+.item_name,
+.price {
+  margin: 1em;
 }
 .sold_out {
   position: relative;
@@ -108,10 +112,7 @@ aside {
   background-color: rgb(180, 233, 180);
   padding: 2em;
 }
-.card_img {
-  border: 1px solid grey;
-  margin-bottom: 1em;
-}
+
 .sizes {
   display: flex;
   flex-direction: row;
@@ -120,7 +121,7 @@ aside {
   justify-content: space-evenly;
   margin: 0;
 }
-.sizes > li {
+.sizes > div {
   border: 1px solid black;
   border-radius: 50%;
   line-height: 1.5em;
@@ -134,10 +135,15 @@ aside {
   margin: 2em;
 }
 .add_button {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  padding-left: 0;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: 0;
   padding-right: 0;
+  background-color: rgb(241, 104, 184);
+  border-radius: 50px;
+  filter: drop-shadow(2px 2px 1px grey);
+}
+aside > button {
   background-color: rgb(241, 104, 184);
   border-radius: 50px;
   filter: drop-shadow(2px 2px 1px grey);
