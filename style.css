@@ -6,9 +6,9 @@ main {
   margin-right: 10em;
   margin-left: 10em;
 }
-/* header {
-  margin-bottom: 5em;
-} */
+header {
+  margin: 2em;
+}
 
 .categories {
   display: grid;
@@ -16,6 +16,7 @@ main {
   grid-template-rows: 1fr;
   justify-items: center;
   padding-bottom: 1em;
+  margin-top: 3em;
 }
 nav > ul {
   display: flex;
@@ -26,12 +27,28 @@ nav > ul {
 
 .nav_menu {
   justify-content: center;
-  gap: 1em;
+  gap: 3em;
   margin: 3em;
+}
+.nav_menu > li {
+  padding: 0.5em;
+  border-radius: 10px;
+}
+.nav_menu > li:hover {
+  background-color: oldlace;
+  color: white;
 }
 
 .cart {
-  justify-self: end;
+  position: relative;
+  left: 80%;
+  display: inline-block;
+}
+
+.price,
+.new_price {
+  font-size: 1.5em;
+  margin: 1em;
 }
 
 .season {
@@ -63,7 +80,7 @@ aside {
   text-align: center;
 }
 .discount {
-  background-color: red;
+  background-color: rgb(255, 75, 75);
   color: white;
   padding: 0.2em;
 }
@@ -77,7 +94,7 @@ aside {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(180, 233, 180);
+  background-color: rgb(255, 234, 191);
   border-radius: 12px;
 }
 .item_sold_out {
@@ -109,7 +126,7 @@ aside {
   grid-row: 2;
   grid-column: 1 / span 2;
   text-align: left;
-  background-color: rgb(180, 233, 180);
+  background-color: rgb(255, 234, 191);
   padding: 2em;
 }
 
@@ -119,7 +136,7 @@ aside {
   list-style: none;
   gap: 1em;
   justify-content: space-evenly;
-  margin: 0;
+  margin: 1em;
 }
 .sizes > div {
   border: 1px solid black;
@@ -131,7 +148,7 @@ aside {
 .card_info {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   margin: 2em;
 }
 .add_button {
@@ -139,14 +156,14 @@ aside {
   padding-bottom: 1em;
   margin-left: 0;
   padding-right: 0;
-  background-color: rgb(241, 104, 184);
+  background-color: rgb(252, 196, 124);
   border-radius: 50px;
   filter: drop-shadow(2px 2px 1px grey);
 }
 aside > button {
-  background-color: rgb(241, 104, 184);
+  background-color: rgb(252, 196, 124);
   border-radius: 50px;
-  filter: drop-shadow(2px 2px 1px grey);
+  filter: drop-shadow(2px 2px 1px rgb(218, 159, 83));
 }
 a {
   text-decoration: none;
