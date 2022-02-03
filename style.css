@@ -125,6 +125,13 @@ aside {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin: 2em;
+}
+.add_button {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 0;
+  padding-right: 0;
 }
 a {
   text-decoration: none;
