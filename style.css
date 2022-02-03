@@ -43,6 +43,9 @@ nav > ul {
   padding: 6em;
   padding-top: 18em;
   padding-bottom: 18em;
+  background-image: url(Images/t-shirt1.jpg);
+  background-size: cover;
+  filter: opacity(50%); /* when hovered change opacity to 100% */
 }
 
 .product_list {
@@ -50,6 +53,7 @@ nav > ul {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 2em;
+  padding-bottom: 1em;
 }
 
 img {
@@ -67,20 +71,43 @@ aside {
 .old_price {
   text-decoration: line-through;
 }
-.item {
+.item,
+.item_sold_out {
   border: 1px solid black;
   padding: 1em;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.item_sold_out {
+  filter: opacity(50%);
 }
 .sold_out {
   position: relative;
   background-color: grey;
   color: white;
-  width: 4em;
-  height: 4em;
-  line-height: 4em;
-  border-radius: 50%;
+  padding: 0.2em;
+  /* width: 3.7em;
+  height: 3.7em;
+  line-height: 3.7em;
+  border-radius: 50%; */
   text-align: center;
-  top: 100%;
-  right: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+a:link {
+  color: magenta;
+}
+a:hover {
+  color: rgb(238, 76, 165);
+}
+a:visited {
+  color: midnightblue;
+}
+
+a:active {
+  color: rgb(30, 121, 226);
 }
