@@ -105,6 +105,12 @@ aside {
   grid-row: 2;
   grid-column: 1 / span 2;
   text-align: left;
+  background-color: rgb(180, 233, 180);
+  padding: 2em;
+}
+.card_img {
+  border: 1px solid grey;
+  margin-bottom: 1em;
 }
 .sizes {
   display: flex;
@@ -132,6 +138,9 @@ aside {
   padding-bottom: 2em;
   padding-left: 0;
   padding-right: 0;
+  background-color: rgb(241, 104, 184);
+  border-radius: 50px;
+  filter: drop-shadow(2px 2px 1px grey);
 }
 a {
   text-decoration: none;
