@@ -10,9 +10,9 @@ main {
   margin-right: 10em;
   margin-left: 10em;
 }
-header {
+/* header {
   margin-bottom: 5em;
-}
+} */
 
 .categories {
   display: grid;
@@ -31,6 +31,7 @@ nav > ul {
 .nav_menu {
   justify-content: center;
   gap: 1em;
+  margin: 3em;
 }
 
 .cart {
@@ -57,4 +58,29 @@ img {
 
 aside {
   text-align: center;
+}
+.discount {
+  background-color: red;
+  color: white;
+  padding: 0.2em;
+}
+.old_price {
+  text-decoration: line-through;
+}
+.item {
+  border: 1px solid black;
+  padding: 1em;
+  position: relative;
+}
+.sold_out {
+  position: relative;
+  background-color: grey;
+  color: white;
+  width: 4em;
+  height: 4em;
+  line-height: 4em;
+  border-radius: 50%;
+  text-align: center;
+  top: 100%;
+  right: 100%;
 }
