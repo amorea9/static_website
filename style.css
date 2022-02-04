@@ -25,6 +25,14 @@ nav > ul {
   align-items: center;
 }
 
+.menu {
+  display: flex;
+  background-color: rgb(252, 142, 197);
+  justify-content: space-between;
+  padding: 1em;
+  border-radius: 20px;
+}
+
 .nav_menu {
   justify-content: center;
   gap: 3em;
@@ -37,12 +45,6 @@ nav > ul {
 .nav_menu > li:hover {
   background-color: oldlace;
   color: white;
-}
-
-.cart {
-  position: relative;
-  left: 80%;
-  display: inline-block;
 }
 
 .price,
@@ -182,4 +184,13 @@ a:visited {
 
 a:active {
   color: rgb(30, 121, 226);
+}
+
+/* media queries*/
+
+@media only screen and (max-width: 800px) {
+  .item_card,
+  .categories {
+    grid-template-columns: 1fr;
+  }
 }
