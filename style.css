@@ -21,7 +21,7 @@ header {
 
 .categories {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-template-rows: 1fr;
   justify-items: center;
   padding-bottom: 1em;
@@ -215,7 +215,10 @@ a:active {
   }
   .season {
     border: 0;
-    padding: 10em;
+    padding: 8em;
+  }
+  main {
+    padding-top: 1em;
   }
 }
 
