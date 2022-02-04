@@ -2,12 +2,21 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #ffbe7bff;
+  margin-top: auto;
+  margin: 0;
+}
+
 main {
   margin-right: 10em;
   margin-left: 10em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px;
+  padding-top: 3em;
 }
 header {
-  margin: 2em;
+  margin: 0;
 }
 
 .categories {
@@ -27,16 +36,15 @@ nav > ul {
 
 .menu {
   display: flex;
-  background-color: rgb(252, 142, 197);
+  background-color: #ffa351ff;
   justify-content: space-between;
-  padding: 1em;
-  border-radius: 20px;
+  padding: 1.5em;
 }
 
 .nav_menu {
   justify-content: center;
   gap: 3em;
-  margin: 3em;
+  margin: 1.5em;
 }
 .nav_menu > li {
   padding: 0.5em;
@@ -51,6 +59,11 @@ nav > ul {
 .new_price {
   font-size: 1.5em;
   margin: 1em;
+}
+
+.card_info .price {
+  font-size: 1.8em;
+  font-weight: bold;
 }
 
 .season {
@@ -130,8 +143,17 @@ aside {
   grid-row: 2;
   grid-column: 1 / span 2;
   text-align: left;
-  background-color: rgb(255, 234, 191);
+  background-color: #eed971ff;
   padding: 2em;
+  color: black;
+  text-align: left;
+}
+
+.item_info h4,
+.item_info h3 {
+  display: block;
+
+  color: black;
 }
 
 .sizes {
@@ -160,9 +182,9 @@ aside {
   padding-bottom: 1em;
   margin-left: 0;
   padding-right: 0;
-  background-color: rgb(252, 196, 124);
-  border-radius: 50px;
+  background-color: #eed971ff;
   filter: drop-shadow(2px 2px 1px grey);
+  color: black;
 }
 aside > button {
   background-color: rgb(252, 196, 124);
@@ -179,7 +201,7 @@ a:hover {
   color: rgb(238, 76, 165);
 }
 a:visited {
-  color: midnightblue;
+  color: black;
 }
 
 a:active {
