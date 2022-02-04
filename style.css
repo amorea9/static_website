@@ -193,4 +193,8 @@ a:active {
   .categories {
     grid-template-columns: 1fr;
   }
+  main {
+    margin-right: 3em;
+    margin-left: 3em;
+  }
 }
