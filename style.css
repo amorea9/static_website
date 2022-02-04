@@ -25,7 +25,7 @@ header {
   grid-template-rows: 1fr;
   justify-items: center;
   padding-bottom: 1em;
-  margin-top: 3em;
+  margin-top: 1em;
 }
 nav > ul {
   display: flex;
@@ -67,7 +67,6 @@ nav > ul {
 }
 
 .season {
-  border: 1px solid black;
   padding: 6em;
   padding-top: 18em;
   padding-bottom: 18em;
@@ -209,6 +208,16 @@ a:active {
 }
 
 /* media queries*/
+@media only screen and (max-width: 1000px) {
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .season {
+    border: 0;
+    padding: 10em;
+  }
+}
 
 @media only screen and (max-width: 800px) {
   .item_card,
