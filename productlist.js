@@ -51,10 +51,13 @@ function showProduct(product) {
   if (product.discount) {
     myClone.querySelector(".item").classList.add("item_discounted");
     myClone.querySelector(".price").classList.add("new_price");
-    myClone.querySelector(".new_price").textContent = `DKK ${
+    myClone.querySelector(".new_price").textContent = `Now DKK ${
       product.price - (product.price / 100) * product.discount
     },-`;
-    myClone.querySelector(".old_price").textContent = `DKK ${product.price},-`;
+
+    myClone.querySelector(
+      ".old_price"
+    ).textContent = `Was DKK ${product.price},-`;
   }
 
   /*<div class="discounted">  
