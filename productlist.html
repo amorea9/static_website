@@ -24,29 +24,37 @@
     </header>
     <main>
       <div class="product_list">
-        <div class="item">
-          <a href="product.html"
-            ><img src="Images/t-shirt1.jpg" alt="image"
-          /></a>
-          <aside>
-            <div class="item_name">T-shirt</div>
-            <div class="price">500dkk</div>
-            <button>add to cart</button>
-          </aside>
-        </div>
-        <div class="item">
+        <template id="item_template">
+          <div class="item">
+            <a href="product.html"
+              ><img src="Images/t-shirt1.jpg" alt="image"
+            /></a>
+            <aside>
+              <div class="item_name">T-shirt</div>
+              <div class="discounted">
+                <p class="discount">-50%</p>
+                <p class="old_price">Prev. DKK 1000,-</p>
+              </div>
+              <div class="price"><span> Now </span> DKK 500,-</div>
+              <button>add to cart</button>
+            </aside>
+          </div>
+        </template>
+      </div>
+
+      <!-- <div class="item item_discounted">
           <a href="product.html"
             ><img src="Images/t-shirt1.jpg" alt="image"
           /></a>
           <aside>
             <div class="item_name">T-shirt</div>
             <div class="discount">-50%</div>
-            <div class="old_price">1000dkk</div>
-            <div class="new_price">500dkk</div>
+            <div class="old_price"><span>Prev.</span>1000dkk</div>
+            <div class="price new_price"><span>Now</span>500dkk</div>
             <button>add to cart</button>
           </aside>
         </div>
-        <div class="item_sold_out">
+        <div class="item item_sold_out">
           <a href="product.html"
             ><img src="Images/t-shirt1.jpg" alt="image"
           /></a>
@@ -106,10 +114,9 @@
             <div class="price">500dkk</div>
             <button>add to cart</button>
           </aside>
-        </div>
-      </div>
+        </div> -->
     </main>
     <footer></footer>
-    <script src="javascript.js"></script>
+    <script src="productlist.js"></script>
   </body>
 </html>
