@@ -13,7 +13,7 @@ function showProduct(product) {
   ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
   document.querySelector(".card_img img").alt = product.productdisplayname;
   document.querySelector(".item_description").innerHTML = product.description;
-  document.querySelector(".price").textContent = "dkk " + product.price + ",-";
+  document.querySelector(".price").textContent = "DKK " + product.price + ",-";
   document.querySelector(".model_name").textContent = product.variantname;
   document.querySelector(".item_number").textContent = product.id;
   document.querySelector(".item_color").textContent =
