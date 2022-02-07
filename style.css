@@ -55,12 +55,6 @@ nav > ul {
   color: white;
 }
 
-.price,
-.new_price {
-  font-size: 1.5em;
-  margin: 1em;
-}
-
 .card_info .price {
   font-size: 1.8em;
   font-weight: bold;
@@ -98,20 +92,22 @@ aside {
   text-align: center;
 }
 
-.product_list .item aside.discounted,
-.product_list .item aside.price span {
+.product_list aside div.price span,
+.product_list aside .discounted {
   display: none;
 }
-.product_list div.item_discounted aside.discounted {
-  display: initial;
-}
-.product_list div.item_discounted aside.price .span {
+.product_list div.item_discounted aside .discounted {
   display: initial;
 }
 .discounted .discount {
   background-color: rgb(255, 75, 75);
   color: white;
   padding: 0.2em;
+}
+
+.product_list div.item_discounted aside div.price span {
+  display: initial;
+  background-color: rgb(47, 66, 236);
 }
 
 .old_price {
@@ -130,8 +126,13 @@ aside {
 .item_sold_out {
   filter: opacity(50%);
 }
-.item_name,
-.price {
+.item_name {
+  margin: 1em;
+}
+
+.price,
+.new_price {
+  font-size: 1.5em;
   margin: 1em;
 }
 .sold_out {
