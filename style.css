@@ -78,6 +78,8 @@ nav > ul {
   filter: opacity(100%);
 }
 
+/*product list*/
+
 .product_list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -95,11 +97,23 @@ img {
 aside {
   text-align: center;
 }
-.discount {
+
+.product_list .item aside.discounted,
+.product_list .item aside.price span {
+  display: none;
+}
+.product_list div.item_discounted aside.discounted {
+  display: initial;
+}
+.product_list div.item_discounted aside.price .span {
+  display: initial;
+}
+.discounted .discount {
   background-color: rgb(255, 75, 75);
   color: white;
   padding: 0.2em;
 }
+
 .old_price {
   text-decoration: line-through;
 }
@@ -131,6 +145,8 @@ aside {
   border-radius: 50%; */
   text-align: center;
 }
+
+/*product page*/
 
 .item_card {
   display: grid;
