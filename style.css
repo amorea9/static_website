@@ -27,6 +27,7 @@ main {
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
   padding: 2em;
+  margin-top: 2em;
 }
 header {
   margin: 0;
@@ -52,6 +53,7 @@ nav > ul {
   background-color: #ffa351ff;
   justify-content: space-between;
   padding: 1.5em;
+  align-items: center;
 }
 
 .logo {
@@ -108,21 +110,28 @@ img {
   height: auto;
 }
 
-aside {
+.item aside,
+.item_sold_out aside,
+.item_discounted aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
 }
 
 /*.product_list aside div.price span,*/
-.product_list aside .discounted {
+.product_list aside .discounted,
+.product_list aside .sold_out {
   display: none;
 }
-.product_list div.item_discounted aside .discounted {
+.product_list div.item_discounted aside .discounted,
+.product_list div.item_sold_out aside .sold_out {
   display: initial;
 }
 .discounted .discount {
   background-color: rgb(255, 75, 75);
   color: white;
-  padding: 0.2em;
+  padding: 0.5em;
 }
 
 span {
@@ -138,7 +147,8 @@ span {
   text-decoration: line-through;
 }
 .item,
-.item_sold_out {
+.item_sold_out,
+.item_discounted {
   padding: 1em;
   position: relative;
   display: flex;
@@ -146,6 +156,7 @@ span {
   align-items: center;
   background-color: rgb(255, 234, 191);
   border-radius: 12px;
+  justify-content: space-between;
 }
 .item_sold_out {
   filter: opacity(50%);
@@ -164,7 +175,7 @@ span {
   position: relative;
   background-color: grey;
   color: white;
-  padding: 0.2em;
+  padding: 0.1em;
   /* width: 3.7em;
   height: 3.7em;
   line-height: 3.7em;
@@ -254,7 +265,7 @@ a:visited {
 }
 
 a:active {
-  color: rgb(30, 121, 226);
+  color: rgb(185, 83, 0);
 }
 
 /* media queries*/
