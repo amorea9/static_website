@@ -1,5 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap");
 * {
   box-sizing: border-box;
+  font-family: "Rowdies", cursive;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+a {
+  font-family: "Rowdies", cursive;
+}
+h1 {
+  font-size: 1.5em;
 }
 
 body {
@@ -13,7 +26,7 @@ main {
   margin-left: 10em;
   background-color: rgb(255, 255, 255);
   border-radius: 30px;
-  padding-top: 3em;
+  padding: 2em;
 }
 header {
   margin: 0;
@@ -39,6 +52,13 @@ nav > ul {
   background-color: #ffa351ff;
   justify-content: space-between;
   padding: 1.5em;
+}
+
+.logo {
+  font-size: 2rem;
+  font-family: "Rowdies", cursive;
+  font-weight: 900;
+  line-height: 1em;
 }
 
 .nav_menu {
@@ -92,7 +112,7 @@ aside {
   text-align: center;
 }
 
-.product_list aside div.price span,
+/*.product_list aside div.price span,*/
 .product_list aside .discounted {
   display: none;
 }
@@ -105,10 +125,14 @@ aside {
   padding: 0.2em;
 }
 
-.product_list div.item_discounted aside div.price span {
-  display: initial;
+span {
   background-color: rgb(47, 66, 236);
 }
+
+/* .product_list div.item_discounted aside div.price span {
+  display: initial;
+  background-color: rgb(47, 66, 236);
+} */
 
 .old_price {
   text-decoration: line-through;
@@ -128,11 +152,12 @@ aside {
 }
 .item_name {
   margin: 1em;
+  font-size: 1.5em;
 }
 
 .price,
 .new_price {
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 1em;
 }
 .sold_out {
@@ -159,10 +184,16 @@ aside {
   grid-row: 2;
   grid-column: 1 / span 2;
   text-align: left;
-  background-color: #eed971ff;
+  background-color: #f9d4b9;
   padding: 2em;
   color: black;
   text-align: left;
+  margin: 3em;
+  margin-bottom: 0;
+}
+
+.item_info p {
+  color: rgb(88, 88, 88);
 }
 
 .item_info h4,
@@ -194,18 +225,20 @@ aside {
   margin: 2em;
 }
 .add_button {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
   margin-left: 0;
   padding-right: 0;
-  background-color: #eed971ff;
+  background-color: #f9d4b9;
   filter: drop-shadow(2px 2px 1px grey);
   color: black;
+  font-size: 1em;
 }
 aside > button {
   background-color: rgb(252, 196, 124);
   border-radius: 50px;
   filter: drop-shadow(2px 2px 1px rgb(218, 159, 83));
+  padding: 1em;
 }
 a {
   text-decoration: none;
