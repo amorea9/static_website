@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products/1165";
+const url = "https://kea-alt-del.dk/t7/api/products/1164";
 
 fetch(url)
   .then((res) => res.json())
@@ -19,4 +19,27 @@ function showProduct(product) {
   document.querySelector(".item_color").textContent =
     product.colour1 + " " + product.colour2;
   document.querySelector(".item_gender").textContent = product.gender;
+  document.querySelector(".discount").textContent = `${product.discount}%`;
+  document.querySelector(
+    ".old_price"
+  ).textContent = `Was DKK ${product.price},-`;
+  // document.querySelector(".new_price").textContent = `Now DKK ${
+  //   product.price - (product.price / 100) * product.discount
+  // },-`;
+
+  if (product.discount) {
+    document.querySelector(".item_card").classList.add("item_discounted");
+    document.querySelector(".price").classList.add("new_price");
+    document.querySelector(".new_price").textContent = `Now DKK ${
+      product.price - (product.price / 100) * product.discount
+    },-`;
+
+    document.querySelector(
+      ".old_price"
+    ).textContent = `Was DKK ${product.price},-`;
+  }
+
+  if (product.soldout) {
+    document.querySelector(".item_card").classList.add("item_sold_out");
+  }
 }

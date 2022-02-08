@@ -31,7 +31,7 @@ function showProduct(product) {
   myClone.querySelector(".item img").alt = product.productdisplayname;
 
   if (product.soldout) {
-    myClone.querySelector(".item").classList.add("item_sold_out");
+    myClone.querySelector(".item").classList.add("item_sold_out"); //change this class to fix opacity
   }
   if (product.discount) {
     myClone.querySelector(".item").classList.add("item_discounted");
