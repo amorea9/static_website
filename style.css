@@ -125,15 +125,17 @@ img {
 .card_info .sold_out,
 .discounted_text,
 .item_card .card_info .sold_out,
-.item_card .card_info .discounted_text {
+.item_card .card_info .discounted_text,
+.item_card .card_info .discounted {
   display: none;
 }
 .product_list div.item_discounted aside .discounted,
 .product_list div.item_sold_out aside .sold_out,
 .card_info .sold_out,
 .item_discounted aside .discounted_text,
-.item_card.item_discounted .card_info .sold_out,
-.item_card.item_discounted .card_info .discounted_text {
+.item_card.item_sold_out .card_info .sold_out,
+.item_card.item_discounted .card_info .discounted_text,
+.item_card.item_discounted .card_info .discounted {
   display: initial;
 }
 .discounted .discount {
