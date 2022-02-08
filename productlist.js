@@ -8,9 +8,6 @@ function handleProductList(data) {
   data.forEach(showProduct);
 }
 
-//item_discounted item_sold_out  classes
-//sold_out class for
-
 function showProduct(product) {
   console.log(product);
 
@@ -21,6 +18,9 @@ function showProduct(product) {
   const myClone = template.cloneNode(true);
 
   //change content
+  myClone
+    .querySelector(".alink")
+    .setAttribute("href", `product.html?id=${product.id}`);
 
   myClone.querySelector(".item_name").textContent = product.productdisplayname;
   myClone.querySelector(".price").textContent = `DKK ${product.price},-`;
@@ -36,10 +36,9 @@ function showProduct(product) {
   if (product.discount) {
     myClone.querySelector(".item").classList.add("item_discounted");
     myClone.querySelector(".price").classList.add("new_price");
-    myClone.querySelector(".new_price").textContent = `Now DKK ${
+    myClone.querySelector(".new_price").textContent = `DKK ${Math.ceil(
       product.price - (product.price / 100) * product.discount
-    },-`;
-
+    )},-`;
     myClone.querySelector(
       ".old_price"
     ).textContent = `Was DKK ${product.price},-`;
