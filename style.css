@@ -86,8 +86,8 @@ nav > ul {
   padding: 6em;
   padding-top: 18em;
   padding-bottom: 18em;
-  background-image: url(Images/t-shirt1.jpg); /* this img needs to be in html */
-  background-size: cover;
+  /* background-image: url(Images/t-shirt1.jpg); this img needs to be in html 
+   background-size: cover; */
   filter: opacity(50%); /* when hovered change opacity to 100% */
 }
 .season:hover {
