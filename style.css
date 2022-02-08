@@ -86,7 +86,7 @@ nav > ul {
   padding: 6em;
   padding-top: 18em;
   padding-bottom: 18em;
-  background-image: url(Images/t-shirt1.jpg);
+  background-image: url(Images/t-shirt1.jpg); /* this img needs to be in html */
   background-size: cover;
   filter: opacity(50%); /* when hovered change opacity to 100% */
 }
@@ -122,12 +122,18 @@ img {
 /*.product_list aside div.price span,*/
 .product_list aside .discounted,
 .product_list aside .sold_out,
-.card_info .sold_out {
+.card_info .sold_out,
+.discounted_text,
+.item_card .card_info .sold_out,
+.item_card .card_info .discounted_text {
   display: none;
 }
 .product_list div.item_discounted aside .discounted,
 .product_list div.item_sold_out aside .sold_out,
-.card_info .sold_out {
+.card_info .sold_out,
+.item_discounted aside .discounted_text,
+.item_card.item_discounted .card_info .sold_out,
+.item_card.item_discounted .card_info .discounted_text {
   display: initial;
 }
 .discounted .discount {
@@ -136,17 +142,13 @@ img {
   padding: 0.5em;
 }
 
-span {
-  background-color: rgb(47, 66, 236);
+.discounted_text {
+  font-size: 1.2em;
 }
-
-/* .product_list div.item_discounted aside div.price span {
-  display: initial;
-  background-color: rgb(47, 66, 236);
-} */
 
 .old_price {
   text-decoration: line-through;
+  color: rgb(80, 80, 80);
 }
 .item,
 .item_sold_out,
@@ -171,7 +173,7 @@ span {
 .price,
 .new_price {
   font-size: 1.3em;
-  margin: 1em;
+  margin: 0.5em;
 }
 .sold_out {
   position: relative;
