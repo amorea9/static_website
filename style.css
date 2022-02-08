@@ -16,7 +16,7 @@ h1 {
 }
 
 body {
-  background-color: #ffbe7bff;
+  background-color: rgb(255, 255, 255);
   margin-top: auto;
   margin: 0;
 }
@@ -24,7 +24,7 @@ body {
 main {
   margin-right: 10em;
   margin-left: 10em;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffbe7bff;
   border-radius: 30px;
   padding: 2em;
   margin-top: 2em;
@@ -73,7 +73,7 @@ nav > ul {
   border-radius: 10px;
 }
 .nav_menu > li:hover {
-  background-color: oldlace;
+  background-color: #ffa351ff;
   color: white;
 }
 
@@ -104,13 +104,19 @@ nav > ul {
   padding-bottom: 1em;
 }
 
+.item_essentials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
 img {
   max-width: 100%;
   display: block;
   height: auto;
 }
 
-.item aside,
 .item_sold_out aside,
 .item_discounted aside {
   display: flex;
@@ -160,13 +166,20 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 234, 191);
+  background-color: rgb(255, 225, 191);
   border-radius: 12px;
   justify-content: space-between;
 }
-.item_sold_out {
+.item_sold_out .item_essentials button,
+.item_sold_out .add_button {
   filter: opacity(50%);
+  color: grey;
 }
+.item .item_essentials button:hover,
+.add_button:hover {
+  background-color: #ffa351ff;
+}
+
 .item_name {
   margin: 1em;
   font-size: 1.5em;
@@ -200,13 +213,12 @@ img {
 .item_info {
   grid-row: 2;
   grid-column: 1 / span 2;
-  text-align: left;
-  background-color: #f9d4b9;
+  background-color: #ffbe7bff;
   padding: 2em;
   color: black;
   text-align: left;
   margin: 3em;
-  margin-bottom: 0;
+  margin-bottom: 1em;
 }
 
 .item_info p {
@@ -251,7 +263,8 @@ img {
   color: black;
   font-size: 1em;
 }
-aside > button {
+aside > button,
+.add_button {
   background-color: rgb(252, 196, 124);
   border-radius: 50px;
   filter: drop-shadow(2px 2px 1px rgb(218, 159, 83));
