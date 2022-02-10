@@ -82,7 +82,7 @@ nav > ul {
   font-weight: bold;
 }
 
-.season {
+.item_season {
   padding: 6em;
   padding-top: 18em;
   padding-bottom: 18em;
@@ -90,7 +90,7 @@ nav > ul {
    background-size: cover; */
   filter: opacity(50%); /* when hovered change opacity to 100% */
 }
-.season:hover {
+.item_season:hover {
   filter: opacity(100%);
 }
 
@@ -159,6 +159,7 @@ img {
   color: rgb(80, 80, 80);
 }
 .item,
+.item_card,
 .item_sold_out,
 .item_discounted {
   padding: 1em;
