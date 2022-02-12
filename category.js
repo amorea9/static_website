@@ -1,4 +1,4 @@
-const url = "https://kea-alt-del.dk/t7/api/products?limit=4";
+const url = "https://kea-alt-del.dk/t7/api/seasons";
 
 // const url = "https://kea-alt-del.dk/t7/api/products";
 fetch(url)
@@ -24,9 +24,9 @@ function showProduct(product) {
   myClone
     .querySelector(".alink")
     .setAttribute("href", `productlist.html?season=${product.season}`);
-  myClone.querySelector(
-    ".alink img"
-  ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
+  // myClone.querySelector(
+  //   ".alink img"
+  // ).src = `https://kea-alt-del.dk/t7/images/webp/640/${product.id}.webp`;
 
   //grab parent
   const parent = document.querySelector(".categories");

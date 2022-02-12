@@ -49,12 +49,6 @@ function showProduct(product) {
     ).textContent = `Was DKK ${product.price},-`;
   }
 
-  /*<div class="discounted">  
-                <p class="discount">-50%</p>  
-                <p class="old_price">Prev. DKK 1000,-</p>
-              </div>
-              <div class="price"><span> Now </span> DKK 500,-</div> */
-
   //grab parent
 
   const parent = document.querySelector(".product_list");
