@@ -1,34 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap");
-/* :root {
-  --color: color;
-} */
+
+:root {
+  --main-color: #ffbe7bff;
+  --menu-color: #ffa351ff;
+  --discounted-color: rgb(255, 75, 75);
+  --card-color: rgb(255, 225, 191);
+  --button-color: #f9d4b9;
+}
 
 * {
   box-sizing: border-box;
-  font-family: "Rowdies", cursive;
 }
-p,
-h1,
-h2,
-h3,
-h4,
-a {
-  font-family: "Rowdies", cursive;
-}
+
 h1 {
   font-size: 1.5em;
 }
 
 body {
   background-color: rgb(255, 255, 255);
-  margin-top: auto;
   margin: 0;
+  font-family: "Rowdies", cursive;
 }
 
 main {
   margin-right: 10em;
   margin-left: 10em;
-  background-color: #ffbe7bff;
+  background-color: var(--main-color);
   border-radius: 30px;
   padding: 2em;
   margin-top: 2em;
@@ -54,7 +51,7 @@ nav > ul {
 
 .menu {
   display: flex;
-  background-color: #ffa351ff;
+  background-color: var(--menu-color);
   justify-content: space-between;
   padding: 1.5em;
   align-items: center;
@@ -62,7 +59,6 @@ nav > ul {
 
 .logo {
   font-size: 2rem;
-  font-family: "Rowdies", cursive;
   font-weight: 900;
   line-height: 1em;
 }
@@ -76,8 +72,9 @@ nav > ul {
   padding: 0.5em;
   border-radius: 10px;
 }
+
 .nav_menu > li:hover {
-  background-color: #ffa351ff;
+  background-color: var(--menu-color);
   color: white;
 }
 
@@ -155,7 +152,7 @@ img {
   display: initial;
 }
 .discounted .discount {
-  background-color: rgb(255, 75, 75);
+  background-color: var(--discounted-color);
   color: white;
   padding: 0.5em;
 }
@@ -177,18 +174,20 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(255, 225, 191);
+  background-color: var(--card-color);
   border-radius: 12px;
   justify-content: space-between;
 }
+
 .item_sold_out .item_essentials button,
 .item_sold_out .add_button {
   filter: opacity(50%);
   color: grey;
 }
+
 .item .item_essentials button:hover,
 .add_button:hover {
-  background-color: #ffa351ff;
+  background-color: var(--menu-color);
 }
 
 .item_name {
@@ -218,13 +217,13 @@ img {
 .item_card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
   text-align: center;
 }
+
 .item_info {
   grid-row: 2;
   grid-column: 1 / span 2;
-  background-color: #ffbe7bff;
+  background-color: var(--main-color);
   padding: 2em;
   color: black;
   text-align: left;
@@ -264,12 +263,13 @@ img {
   justify-content: center;
   margin: 2em;
 }
+
 .add_button {
   padding-top: 0.8em;
   padding-bottom: 0.8em;
   margin-left: 0;
   padding-right: 0;
-  background-color: #f9d4b9;
+  background-color: var(--button-color);
   filter: drop-shadow(2px 2px 1px grey);
   color: black;
   font-size: 1em;
